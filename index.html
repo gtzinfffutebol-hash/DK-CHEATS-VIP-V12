@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#030712">
+<title>DK CHEATS VIP - Professional Edition</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Inter:wght@300;400;600&display=swap');
+
+  :root {
+    --primary: #00f0ff;
+    --primary-glow: rgba(0, 240, 255, 0.35);
+    --bg-dark: #030712;
+    --panel-bg: rgba(10, 15, 30, 0.85);
+    --border-color: rgba(0, 240, 255, 0.25);
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    background-color: var(--bg-dark);
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+      linear-gradient(to bottom, #030712, #0b0f19);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+  }
+
+  .panel {
+    width: min(100%, 380px);
+    padding: 26px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--panel-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px var(--primary-glow);
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 14px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #00f0ff, #3b82f6);
+    color: #030712;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  }
+
+  .subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 11px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.5px;
+    margin: 8px 0 24px;
+  }
+
+  label {
+    display: block;
+    font-size: 11px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin: 0 0 8px;
+  }
+
+  input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: rgba(3, 7, 18, 0.7);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 12px var(--primary-glow);
+  }
+
+  button, .linkbtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 13px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00f0ff, #2563eb);
+    color: #030712;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.2);
+    margin-top: 10px;
+  }
+
+  button:hover, .linkbtn:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 240, 255, 0.4);
+  }
+
+  #loginBtn { margin-top: 14px; }
+
+  .message {
+    min-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0 0;
+    color: #ef4444;
+  }
+  
+  .message.success {
+    color: #10b981;
+  }
+
+  .hidden { display: none !important; }
+
+  .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin: 22px 0 12px;
+    text-transform: uppercase;
+    border-left: 3px solid var(--primary);
+    padding-left: 8px;
+  }
+
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 13px;
+    color: var(--text-main);
+  }
+
+  .switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .switch input { opacity: 0; width: 0; height: 0; }
+
+  .track {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .track::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    transition: 0.3s;
+  }
+
+  .switch input:checked + .track {
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary-glow);
+  }
+
+  .switch input:checked + .track::before {
+    transform: translateX(20px);
+    background: #030712;
+  }
+
+  #injectBtn { margin-top: 20px; }
+
+  .status {
+    margin: 10px 0 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    min-height: 16px;
+  }
+
+  .status.good { color: #10b981; text-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+
+  .footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 9px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 22px;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<main class="panel">
+  <div class="logo">DK</div>
+  <h1>DK CHEATS</h1>
+  <p class="subtitle">VIP SYSTEM • V8 2.0</p>
+
+  <!-- Tela de Login -->
+  <section id="loginScreen">
+    <label for="keyInput">DIGITE SUA KEY DE ACESSO</label>
+    <input id="keyInput" type="password" placeholder="DIGITA A key..." autocomplete="off">
+    <button id="loginBtn" type="button">AUTENTICAR</button>
+    <p id="loginMessage" class="message" aria-live="polite"></p>
+  </section>
+
+  <!-- Tela Principal -->
+  <section id="mainScreen" class="hidden">
+    <div class="section-title">Módulos de Desempenho</div>
+    <div class="option"><span>Otimizar Mira</span><label class="switch"><input type="checkbox" id="opt-1" class="cheat-option" data-name="Otimizar Mira"><span class="track"></span></label></div>
+    <div class="option"><span>Auxiliar Mira</span><label class="switch"><input type="checkbox" id="opt-2" class="cheat-option" data-name="Auxiliar Mira"><span class="track"></span></label></div>
+    <div class="option"><span>Otimizar Telefone</span><label class="switch"><input type="checkbox" id="opt-3" class="cheat-option" data-name="Otimizar Telefone"><span class="track"></span></label></div>
+    <div class="option"><span>Calibrar a Mira</span><label class="switch"><input type="checkbox" id="opt-4" class="cheat-option" data-name="Calibrar a Mira"><span class="track"></span></label></div>
+    <div class="option"><span>ESP Radar</span><label class="switch"><input type="checkbox" id="opt-5" class="cheat-option" data-name="ESP"><span class="track"></span></label></div>
+    <div class="option"><span>AIMBOT Pro</span><label class="switch"><input type="checkbox" id="opt-6" class="cheat-option" data-name="AIMBOT"><span class="track"></span></label></div>
+    
+    <button id="injectBtn" type="button">INJETAR SISTEMA</button>
+    <p id="injectStatus" class="status" aria-live="polite"></p>
+    
+    <a class="linkbtn" id="freeFireBtn" href="intent://#Intent;scheme=freefire;package=com.dts.freefireth;end">ON FREE FIRE</a>
+    <a class="linkbtn" id="redessociaisBtn" href="https://app.solostocks.com.br/@DK_MURILO?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAVIjZNleHRuA2FlbQIxMQBwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABpywLvR0mxm07UdRiBcAblgGfV7V0GRvrGzj9CEnXcHdJ10r0S0RZpZYqWgOm_aem_W-g79rnD-_kf9tRrOdsN_g" target="_blank">(REDES SOCIAIS)</a>
+  </section>
+  
+  <div class="footer">© 2026 DK CHEATS ™ • ALL RIGHTS RESERVED</div>
+</main>
+
+<script>
+  const loginBtn = document.getElementById('loginBtn');
+  const keyInput = document.getElementById('keyInput');
+  const loginMessage = document.getElementById('loginMessage');
+  const loginScreen = document.getElementById('loginScreen');
+  const mainScreen = document.getElementById('mainScreen');
+  
+  const injectBtn = document.getElementById('injectBtn');
+  const injectStatus = document.getElementById('injectStatus');
+
+  // Permitir login pressionando Enter
+  keyInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      loginBtn.click();
+    }
+  });
+
+  loginBtn.addEventListener('click', () => {
+    const val = keyInput.value.trim();
+    if (val === "xit" || val === "01") {
+      loginMessage.textContent = "Acesso concedido com sucesso!";
+      loginMessage.classList.add('success');
+      setTimeout(() => {
+        loginScreen.classList.add('hidden');
+        mainScreen.classList.remove('hidden');
+      }, 800);
+    } else {
+      loginMessage.textContent = "Key inválida! Tente novamente.";
+      loginMessage.classList.remove('success');
+    }
+  });
+
+  injectBtn.addEventListener('click', () => {
+    injectStatus.textContent = "Injetando códigos no sistema...";
+    injectStatus.classList.remove('good');
+    setTimeout(() => {
+      injectStatus.textContent = "Injeção bem-sucedida!";
+      injectStatus.classList.add('good');
+    }, 1200);
+  });
+</script>
+</body>
+</html>
